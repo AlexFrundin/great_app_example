@@ -27,15 +27,7 @@ DEBUG = True
 CORS_ORIGIN_ALLOW_ALL = True
 
 ALLOWED_HOSTS = [
-    'https://ja5i7sw6ji.execute-api.eu-west-2.amazonaws.com/prod',
-    'ja5i7sw6ji.execute-api.eu-west-2.amazonaws.com/prod',
-    'ja5i7sw6ji.execute-api.eu-west-2.amazonaws.com',
-    'https://api.theethosnetwork.com',
-    'api.theethosnetwork.com',
-    'ethos-api.rocketech.net',
-    '0.0.0.0',
-    '172.26.98.207',
-    'backend',
+
 ]
 
 # Application definition
@@ -169,8 +161,8 @@ class JwtConstants():
 
 class EthosCommonConstants():
     CONTENT_TYPE_JSON = "application/json"
-    EMAIL_HOST_USER = "The Ethos Network <team@theethosnetwork.com>"
-    ADMIN_EMAIL_ID = "team@theethosnetwork.com"
+    EMAIL_HOST_USER = ""
+    ADMIN_EMAIL_ID = ""
     REDIS_HOST = os.environ.get('REDIS_HOST')
     REDIS_EXPIRATION = 60 * 60 * 24  # Set data in Redis for 24 hours
     ACCEPTED_IMG_TYPES = ['jpg', 'JPG', 'jpeg', 'JPEG', 'png', 'PNG']
